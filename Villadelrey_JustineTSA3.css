@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+
+    font-family: 'Fr', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(bgred.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo{
+    margin:100px;
+    width: 100%;
+    height: 100px;
+
+}
+.heading{
+    text-align: center;
+    color: white;
+   font -webkit-text-stroke: ;
+    font-size: 75px;
+    margin-top: 75px;
+    
+}
+
+.paragraph{;
+    font-family: "Nunito"
+    text-align: center;
+    color: white;
+    font-size: 120px;
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+h1{
+    color: yellow;
+}
+span{
+    color:yellow;
+}
