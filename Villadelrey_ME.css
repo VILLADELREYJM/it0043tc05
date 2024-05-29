@@ -61,6 +61,13 @@ img {
     border-radius: 5px;
 }
 
+#ice {
+    width: 80px;
+    background-color: blue;
+    border-radius: 5px;
+
+}
+
 #grass {
     width: 80px;
     background-color: rgba(90, 172, 24, 0.838);
