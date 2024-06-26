@@ -71,6 +71,7 @@ body {
 }
 
 .operations input {
+    background-color: lightgreen;
     color: black;
 }
 
@@ -80,7 +81,9 @@ body {
 }
 
 .title4 {
-    margin-left: -20px;
+    margin-left: 120px;
+    position: absolute;
+    bottom: 50;
 }
 
 #justify-content {
@@ -115,12 +118,14 @@ body {
 
 #flex-grow {
     position: absolute;
-    bottom: 90px;
+    bottom: -20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 100px;
     color: white;
+
+
 }
 
 #row,
@@ -131,7 +136,7 @@ body {
 .box {
     display: flex;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid greenyellow;
     width: 120px;
     height: 120px;
     text-align: center;
@@ -178,18 +183,36 @@ body {
 
 
 #box1 {
-    background-color: darkgoldenrod;
-    color: white;
+
+    background-image: url(https://i.pinimg.com/originals/32/88/2d/32882dbcd4424eb8e814ce8e62e68361.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-color: darkgreen;
+
+
 }
 
 #box2 {
-    background-color: blueviolet;
-    color: white;
+    background-image: url(https://i.gifer.com/origin/55/55b8655f6eb92e0827747badf5bea873_w200.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-color: darkgoldenrod;
+
+
 }
 
 #box3 {
-    background-color: blue;
-    color: white;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/Pluto_rotation_movie_%28transparent%292.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-color: darkseagreen;
+    ;
 }
 
 button {
