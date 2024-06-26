@@ -17,8 +17,10 @@ function Reset() {
 }
 
 function UpdateGap() {
-    const gap = parseInt(document.getElementById("gap").value, 10);
+    let gap = parseInt(document.getElementById("gap").value, 10);
+    gap = Math.max(0, gap);
     container.style.gap = `${gap}px`;
+    document.getElementById("gap").value = gap;
 }
 
 function Direction(x) {
@@ -40,21 +42,24 @@ function AlignItems(x) {
 }
 
 function FlexGrow(number, value) {
+    value = Math.max(0, value);
     document.getElementById(`box${number}`).style.flexGrow = value;
+    document.getElementById(`box-i${number}`).value = value;
 }
 
 function UpdateGrow(x) {
     if (x === 1) {
         for (let i = 1; i <= 3; i++) {
             const box = document.getElementById(`box${i}`);
-            const grow = parseInt(box.style.flexGrow, 10) + 1;
+            let grow = parseInt(box.style.flexGrow, 10) || 0;
+            grow = Math.max(0, grow + 1);
             box.style.flexGrow = grow;
             document.getElementById(`box-i${i}`).value = grow;
         }
     } else if (x === 2) {
         for (let i = 1; i <= 3; i++) {
             const box = document.getElementById(`box${i}`);
-            box.style.flexGrow = 0;
+            box.style.flexGrow = '0';
             document.getElementById(`box-i${i}`).value = 0;
         }
     }
