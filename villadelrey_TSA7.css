@@ -118,12 +118,14 @@ body {
 
 #flex-grow {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 100px;
     color: white;
+
+
 }
 
 #row,
