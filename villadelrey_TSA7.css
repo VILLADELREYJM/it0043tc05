@@ -70,6 +70,16 @@ body {
 
 }
 
+.operations input {
+    background-color: white;
+    color: black;
+}
+
+.operations button:hover {
+    background-color: red;
+    border-color: red;
+}
+
 .title4 {
     margin-left: -20px;
 }
