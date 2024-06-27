@@ -10,7 +10,7 @@
     text-align: center;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    height: 750px;
+    height: 850px;
     display: flex;
     background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/154beb65838927.5b0279a21ff61.gif);
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
 #flex-container {
     display: flex;
     border: solid 3px black;
-    height: 750px;
+    height: 850px;
     position: absolute;
     right: 40px;
     top: 20px;
@@ -118,7 +118,7 @@ body {
 
 #flex-grow {
     position: absolute;
-    bottom:250px;
+    bottom:180px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
