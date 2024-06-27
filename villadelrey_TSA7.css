@@ -118,7 +118,7 @@ body {
 
 #flex-grow {
     position: absolute;
-    bottom:180px;
+    bottom:110px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
