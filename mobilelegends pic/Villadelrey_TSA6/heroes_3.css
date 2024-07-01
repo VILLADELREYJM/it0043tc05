@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.4s all ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://i.pinimg.com/originals/64/6d/ae/646dae73fdd41b16a66fc491dfb81c06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    object-fit: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F1320;
+    padding: 1rem;
+}
+
+.logo-bangbang img {
+    width: 159px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.nav-links li {
+    margin-left: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.nav-links a.active {
+    color: aqua;
+}
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.gplay-logo img,
+.appstore-logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gplay-logo:hover,
+.appstore-logo:hover {
+    transform: scale(1.1);
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 5rem;
+    color: wheat;
+    margin-left: 20px;
+}
+
+.grid-details {
+    text-align: center;
+    width: 100%;
+}
+
+.details-item img {
+    border: double 2px white;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.details-item img:hover {
+    transform: scale(1.1);
+}
+
+.details-img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.name-skin {
+    background-color: white;
+    color: black;
+}
+
+.display-box {
+    width: 100%;
+}
+
+.details-text {
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+    border: double 2px white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        margin-right: 5rem;
+    }
+
+    .nav-links li {
+        margin-left: 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo-container {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
+        margin-left: 0;
+    }
+
+    .details-item img {
+        width: 100%;
+    }
+
+    .details-text {
+        font-size: 0.8rem;
+    }
+}

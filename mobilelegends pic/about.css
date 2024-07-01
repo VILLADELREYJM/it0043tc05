@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.8s all ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://i.pinimg.com/736x/ea/8f/b3/ea8fb34178df4842ea9a2e006a1ad447.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F1320;
+    padding: 1rem;
+}
+
+.logo-bangbang img {
+    width: 159px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.nav-links li {
+    margin-left: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.nav-links a.active {
+    color: aqua;
+
+}
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.gplay-logo img,
+.appstore-logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gplay-logo:hover,
+.appstore-logo:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f2a55;
+    width: 80%;
+    margin: 1.5rem auto;
+    color: wheat;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0f2a55;
+    color: wheat;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.title-about {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.about-image img {
+    width: 30%;
+}
+
+.about-details {
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        margin-right: 5rem;
+    }
+
+    .nav-links li {
+        margin-left: 1rem;
+    }
+
+    .about {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .about-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-image img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo-container {
+        position: static;
+        margin: 1rem 0;
+    }
+
+    .about {
+        width: 95%;
+    }
+
+    .about-image img {
+        width: 70%;
+    }
+}
