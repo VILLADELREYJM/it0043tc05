@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease all 0.4;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://media1.tenor.com/m/7d1_R5BLC50AAAAd/mobile-legends.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a::is(:link, :active, :visited).active {
+    color: aqua;
+    background-color: red;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F1320;
+    padding: 1rem;
+}
+
+.logo-bangbang img {
+    width: 159px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.gplay-logo img {
+    width: 120px;
+    height: auto;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.appstore-logo:hover {
+    transform: scale(1.1);
+}
+
+.gplay-logo:hover {
+    transform: scale(1.1);
+}
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-right: 2rem;
+}
+
+.appstore-logo img {
+    left: 150px;
+    width: 120px;
+    height: auto;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.nav-links {
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.nav-links li {
+    margin-left: 3rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: yellow;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.nav-links a.active {
+    color: aqua;
+}
+
+.roles-name {
+    color: #f4d28f;
+    background-color: black;
+    margin-bottom: 10px;
+    border: solid 3px wheat;
+
+}
+
+.roles-details {
+    color: wheat;
+}
+
+.roles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+    padding: 4rem;
+
+}
+
+.roles-img img {
+    background-color: #0F1320;
+    border-radius: 100px;
+    border: solid 2px #0F1320;
+
+}
+
+.Tank-details {
+    color: wheat;
+    background-color: darkgoldenrod;
+    border: solid 7px #0F1320;
+}
+
+.roles-item {
+    background-image: url(https://w0.peakpx.com/wallpaper/790/720/HD-wallpaper-grock-mlbb-gaming-hero-legend-legends-ml-moba-mobile-tank.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 8px;
+
+}
+
+#fighter {
+    background-image: url(https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/06/MLBB_YuZhongSplashArt.jpg);
+
+}
+
+#assassin {
+    background-image: url(https://i0.wp.com/news.seagm.com/wp-content/uploads/2020/03/hanzo-mobile-legends-uhdpaper.com-4K-66.jpg?fit=1024%2C576&ssl=1);
+    background-color: #0F1320;
+}
+
+#marksman {
+    background-image: url(https://wallpapercave.com/wp/wp6715668.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+}
+
+#mage {
+    background-image: url(https://wallpapercave.com/wp/wp12318909.jpg)
+}
+
+#support {
+    background-image: url(https://cdn.vcgamers.com/news/wp-content/uploads/2022/11/Floryn-MLBB.png);
+}
+
+.fighter-details {
+    color: wheat;
+    background-color: darkred;
+    border: solid 7px #0F1320;
+}
+
+.assasin-details {
+    color: wheat;
+    background-color: darkblue;
+    border: solid 7px #0F1320;
+
+}
+
+.marksman-details {
+    color: wheat;
+    background-color: darkgreen;
+    border: solid 7px #0F1320;
+}
+
+.mage-details {
+    color: wheat;
+    background-color: darkcyan;
+    border: solid 7px #0F1320;
+}
+
+.support-details {
+    color: wheat;
+    background-color: darkmagenta;
+    border: solid 7px #0F1320;
+}
+
+.roles-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 150px;
+    background-color: #0F1320;
+    border: double 8px #f4d28f;
+
+}
+
+.roles-img:hover {
+    transform: scale(1.1);
+}
+
+@media(me) @media (max-width: 768px) {
+    .roles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 564px) {
+    .nav-links {
+        margin-right: 2rem;
+    }
+
+    .nav-links li {
+        margin-left: 1rem;
+    }
+
+    .roles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 390px) {
+    .nav-links {
+        margin-right: 2rem;
+    }
+
+    .nav-links li {
+        margin-left: 1rem;
+    }
+
+    .roles-container {
+        grid-template-columns: 1fr;
+    }
+}
