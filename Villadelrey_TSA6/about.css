@@ -192,10 +192,12 @@ body {
     }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 926px) {
 
-    .logo-bangbang {
-        margin-left: 100px;
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
     }
 
     .navbar {
@@ -204,11 +206,20 @@ body {
     }
 
     .nav-links {
-        margin-right: 5rem;
+        margin-left: 300px;
+        flex-direction: column;
+        margin-right: 500px;
+        margin-bottom: 0rem;
+    }
+
+    .logo-bangbang {
+        margin-left: 320px;
     }
 
     .nav-links li {
-        margin-left: 3rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+
     }
 
     .about {
@@ -254,6 +265,100 @@ body {
 
     .about-image img {
         width: 50%;
+    }
+}
+
+@media (max-width: 790px) {
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-left: 230px;
+        flex-direction: column;
+        margin-right: 500px;
+        margin-bottom: 0rem;
+    }
+
+    .logo-bangbang {
+        margin-left: 250px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+
+    }
+
+
+}
+
+@media (max-width:430px) {
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 504px) {
+        logo-container {
+            position: static;
+            margin-bottom: 1rem;
+            order: 2;
+        }
+
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-links {
+            margin-left: 230px;
+            flex-direction: column;
+            margin-right: 200px;
+            margin-bottom: 0rem;
+        }
+
+        .logo-bangbang {
+            margin-right: 300px;
+        }
+
+        .nav-links li {
+            margin-left: 0;
+            margin-bottom: 1rem;
+
+        }
+
+
+    }
+
+    .nav-links {
+        margin-left: 230px;
+        flex-direction: column;
+        margin-left: 95px;
+        margin-bottom: 0rem;
+    }
+
+    .logo-bangbang {
+        margin-left: 100px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+
     }
 }
 

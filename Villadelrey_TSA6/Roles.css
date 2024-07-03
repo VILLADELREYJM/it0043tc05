@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: ease all 0.4;
+    transition: 0.8s all ease;
 }
 
 body {
@@ -135,7 +135,7 @@ a::is(:link, :active, :visited).active {
 }
 
 .roles-item {
-    background-image: url(https://w0.peakpx.com/wallpaper/790/720/HD-wallpaper-grock-mlbb-gaming-hero-legend-legends-ml-moba-mobile-tank.jpg);
+    background-image: url(https://s1.zerochan.net/Tigreal.600.3491211.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +151,7 @@ a::is(:link, :active, :visited).active {
 }
 
 #assassin {
-    background-image: url(https://i0.wp.com/news.seagm.com/wp-content/uploads/2020/03/hanzo-mobile-legends-uhdpaper.com-4K-66.jpg?fit=1024%2C576&ssl=1);
+    background-image: url(https://i.redd.it/xsn8wn6fkoub1.jpg);
     background-color: #0F1320;
 }
 
@@ -216,9 +216,46 @@ a::is(:link, :active, :visited).active {
     transform: scale(1.1);
 }
 
-@media(me) @media (max-width: 768px) {
+
+
+
+@media (max-width: 1573px) {
+    .roles-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 908px) {
     .roles-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-left: 300px;
+        flex-direction: column;
+        margin-right: 500px;
+        margin-bottom: 0rem;
+    }
+
+    .logo-bangbang {
+        margin-left: 320px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+
     }
 }
 

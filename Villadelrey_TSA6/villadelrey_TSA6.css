@@ -376,6 +376,15 @@ footer {
     color: #fff;
 }
 
+@media screen and (max-width: 1416px) {
+
+    .details-item {
+
+        width: 70%;
+
+    }
+
+}
 
 @media (max-width: 940px) {
     .bottom-details img {
@@ -414,10 +423,52 @@ footer {
 
 
 @media (max-width: 1002px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        /* Add some space between nav-links and logo-container */
+    }
+
+    .nav-links li {
+        margin-left: 6rem;
+    }
+
+    #grid-container {
+        margin-left: 55px;
+    }
+
+    .logo-bangbang img {
+        width: 100px;
+        margin-left: 40px;
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
     .details-text {
         width: 120%;
         height: 50%;
+    }
 
+    .right-content {
+        min-width: 100%;
+        margin-left: 30px;
+    }
+
+    .large-box {
+        margin-left: 30px;
     }
 
     .right-bottom {
@@ -426,17 +477,11 @@ footer {
 
     .bottom-details {
         margin-left: 100px;
-
-
     }
 
     .grid,
     .gallery-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
@@ -455,20 +500,23 @@ footer {
 @media (max-width: 1252px) {
 
     .grid-details {
-        width: 75%;
+        width: 100%;
         height: 70%;
         display: block;
     }
 
     .bottom-details {
-        width: 400%;
-        height: 100%;
-
-
+        position: static;
+        margin-bottom: 1rem;
+        order: 2;
+        margin-left: 100px;
+        width: 100%;
     }
 
     .bottom-picture img {
-        width: 1500%;
+        width: 200%;
+        position: static;
+        right: 100px;
     }
 
     .grid,
@@ -530,10 +578,13 @@ footer {
 
     .bottom-picture img {
         width: 300px;
+        position: static;
+        margin-bottom: 1rem;
+        order: 10;
     }
 
     .bottom-details {
-        position: absolute;
+        position: static;
         top: 1260px;
         right: 80px;
     }
@@ -544,6 +595,8 @@ footer {
     }
 
 }
+
+
 
 @media (max-width: 1024px) {
 
@@ -568,11 +621,12 @@ footer {
     }
 
     .logo-container {
-        margin-right: 2rem;
-        width: 19px;
-        position: absolute;
-        right: 0px;
+        margin-right: 3rem;
+
+        position: static;
+
     }
+
 }
 
 @media (max-width: 768px) {
@@ -770,16 +824,42 @@ footer {
 
     .nav-links {
         margin-right: 23rem;
-        /* Adjust as needed */
+
     }
 
     .left-content {
         min-width: 60%;
-        /* Adjust proportions */
+
+    }
+
+    .grid-details {
+        width: 120%;
+
+    }
+
+    .bottom-details img {
+        width: 30%;
+        height: 20px;
+
+        text-align: center;
+        display: block;
+
+        margin: 0 auto;
+
+    }
+
+    .bottom-details {
+        gap: 20px;
+        display: flex;
+    }
+
+    .bottom-img {
+        margin-left: 10px;
+
     }
 
     .details-img {
-        width: 60%;
+        width: 100%;
         ;
     }
 
@@ -788,8 +868,10 @@ footer {
         margin-top: 1rem;
     }
 
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+    .gallery-container {
+        grid-template-columns: repeat(5, 1fr);
+        margin-left: 30px;
+
     }
 
     .right-content {
@@ -798,39 +880,38 @@ footer {
 
     .grid-details {
         gap: 1.5rem;
-        /* Increase gap between items */
+
     }
 }
 
 
-/* Styles for smaller screens */
 @media (max-width: 1004px) {
     .logo-bangbang img {
         width: 120px;
-        /* Adjust logo size */
+
     }
 
     .nav-links {
         margin-right: 5rem;
-        /* Adjust margins */
+
         font-size: 0.9rem;
-        /* Decrease font size */
+
     }
 
     .large-box img,
     .large-box2 video {
         width: 100%;
-        /* Make sure large images and videos are responsive */
+
         height: auto;
     }
 
     .rightsmall-box {
         display: none;
-        /* Hide right small box on smaller screens */
+
     }
 
     .right-content {
         flex-direction: column;
-        /* Stack content in right column */
+
     }
 }
