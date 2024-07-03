@@ -412,12 +412,12 @@ footer {
 
     .nav-links {
         margin-right: 5rem;
-        /* Adjust margin-right as needed */
+
     }
 
     .nav-links li {
         margin-left: 6rem;
-        /* Adjust margin-left as needed */
+
     }
 }
 
@@ -433,7 +433,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin-bottom: 1rem;
-        /* Add some space between nav-links and logo-container */
+
     }
 
     .nav-links li {
@@ -479,9 +479,9 @@ footer {
         margin-left: 100px;
     }
 
-    .grid,
+
     .gallery-container {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -493,7 +493,13 @@ footer {
     }
 
     .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-details {
+        width: 150%;
+
+
     }
 }
 
