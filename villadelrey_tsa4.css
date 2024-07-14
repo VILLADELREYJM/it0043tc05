@@ -1,228 +1,213 @@
-.main-container {
-    margin-top: 20px;
-    margin-left: 400px;
-    border: solid 3px black;
-    width: 400px;
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    height: 750px;
-    display: flex;
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/154beb65838927.5b0279a21ff61.gif);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-
-    background-image: url(https://healeycodes.com/_next/image?url=%2Fposts%2Fflappy-bird%2Fflappy-bird.gif&w=640&q=100);
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background-image: url('gifbg.gif');
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
 }
 
-#flex-container {
-    display: flex;
-    border: solid 3px black;
-    height: 750px;
-    position: absolute;
-    right: 40px;
-    top: 20px;
-    width: 30%;
-    background-image: url(https://i.pinimg.com/originals/cf/84/6f/cf846f865abd23a212af8d2ebb657923.gif);
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
+.container {
+    max-width: 90vw;
+    margin: 1rem auto;
+    text-align: center;
 }
 
-
-
-.box-container {
-    display: flex;
-    padding: 20px;
+.card {
+    border-style: solid;
+    border-color: greenyellow;
+    background-image: url('finalball.jpg');
     width: 300px;
-    height: 300px;
-
-}
-
-
-.title1 {
-    padding: 10px;
-    position: absolute;
-    top: -0px;
-    margin-left: 100px;
-    font-size: 40px;
-}
-
-.title2 {
-    padding: 10px;
-    position: absolute;
-    top: 150px;
-    margin-left: 75px;
-    font-size: 40px;
-
-}
-
-.operations input {
-    background-color: lightgreen;
-    color: black;
-}
-
-.operations button:hover {
-    background-color: red;
-    border-color: red;
-}
-
-.title4 {
-    margin-left: 120px;
-    position: absolute;
-    bottom: 50;
-}
-
-#justify-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-#align-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#justfy-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-
-}
-
-
-
-#flex-direction {
-    position: absolute;
-    top: 100px;
-    text-align: center;
-    margin-left: 40px;
-}
-
-#flex-grow {
-    position: absolute;
-    bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 100px;
-    color: white;
-
-
-}
-
-#row,
-#column {
-    width: 150px;
-}
-
-.box {
-    display: flex;
-    border-radius: 10px;
-    border: 1px solid greenyellow;
-    width: 120px;
-    height: 120px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-#reset-flex-box {
-    position: absolute;
-    top: 140px;
-    left: 470px;
-}
-
-#gap-text {
-    position: absolute;
-    top: 141px;
-    left: 580px;
-    max-width: fit-content;
-    color: black;
-    background-color: gold;
-    font-size: 18px;
-    border-radius: 3px;
-}
-
-#gap {
-    position: absolute;
-    top: 140px;
-    left: 620px;
-    width: 150px;
-    height: 25px;
-    border-radius: 2px;
-    border: 2px solid black;
-    text-align: center;
-
-}
-
-.content-1 {
-    background-color: blue;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
-
-
-#box1 {
-
-    background-image: url(https://i.pinimg.com/originals/32/88/2d/32882dbcd4424eb8e814ce8e62e68361.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    vertical-align: top;
     background-color: darkgreen;
-
-
+    overflow: hidden;
 }
 
-#box2 {
-    background-image: url(https://i.gifer.com/origin/55/55b8655f6eb92e0827747badf5bea873_w200.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
+.image {
+    border-radius: 10%;
+    background-color: darkgreen;
+    position: relative;
+    padding: 1rem;
+    background: url('finalball\'.jpg') no-repeat center;
     background-size: cover;
-    background-color: darkgoldenrod;
+}
+
+.image img {
+    border-radius: 10%;
+    width: 100%;
+    display: inline-block;
+    position: center;
+}
+
+.details1 {
+    padding: 1rem;
+    background-color: darkkhaki;
+    color: white;
+}
+
+.details2 {
+    padding: 1rem;
+    background-color: darkred;
+    color: white;
+}
+
+.details3 {
+    padding: 1rem;
+    background-color: darkblue;
+    color: white;
+}
+
+.details3 {
+    padding: 1rem;
+    background-color: darkblue;
+    color: white;
+}
+
+.details4 {
+    padding: 1rem;
+    background-color: darkorange;
+    color: white;
+
+}
+
+.details5 {
+    padding: 1rem;
+    background-color: gray;
+    color: white;
+
+}
+
+.details6 {
+    padding: 1rem;
+    background-color: lightskyblue;
+    color: white;
+
+}
+
+
+.names {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.type {
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+
+
+
+.type-electric {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
 
 
 }
 
-#box3 {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0c/Pluto_rotation_movie_%28transparent%292.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    background-size: cover;
-    background-color: darkseagreen;
-    ;
+.typefire,
+.type-fire {
+    color: white;
+    background-color: red;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
 }
 
-button {
-    border-radius: 10px;
-    background-color: cyan;
-    font-size: 1.05rem;
+.type-ground {
+    color: white;
+    background-color: brown;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
 }
 
-input {
-    font-family: "Inter";
-    text-align: center;
-    background-color: lightgreen;
+.type-flying {
+    color: white;
+    background-color: skyblue;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
+
+}
+
+.type-psychic {
+    color: white;
+    background-color: pink;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
+}
+
+.type-ghost {
+    color: white;
+    background-color: purple;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
+}
+
+.type-water {
+    color: white;
+    background-color: blue;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin: 0.2rem;
+
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+.add,
+.release {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+.add:hover {
+    background-color: green;
+}
+
+.release {
+    color: black;
+    background-color: white;
+}
+
+.release:hover {
+    background-color: red;
 }
