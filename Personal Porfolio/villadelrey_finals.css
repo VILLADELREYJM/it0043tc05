@@ -1168,7 +1168,15 @@ h6 {
 }
 
 @media (max-width: 768px) {
+.logo {
+        left: 0;
+    }
 
+    .follow {
+
+        position: relative;
+        margin-left: 0;
+    }
 
     .content h3 {
         font-size: 4rem;
