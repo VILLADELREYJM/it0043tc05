@@ -35,6 +35,7 @@ html {
 
 body {
     background-color: black;
+
 }
 
 .about-services {
@@ -653,6 +654,7 @@ header .follow a:hover {
 
 }
 
+
 .read-more:hover {
     color: #77aaff;
 }
@@ -727,6 +729,17 @@ header .follow a:hover {
 .portfolio .box-container .box .icons a:hover {
     background: var(--main-color);
     color: #fff;
+}
+
+
+
+
+
+
+.portfolio .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .contact {
@@ -926,10 +939,14 @@ h6 {
 
     .navbar.active {
         display: flex;
+
+
+
     }
 
     #menu-bars {
         display: block;
+
     }
 
     .about .row-1,
@@ -986,7 +1003,7 @@ h6 {
 @media (max-width: 1017px) {
 
 
-    .home,
+
     .content {
         font-size: 20%;
         position: relative;
@@ -1060,7 +1077,7 @@ h6 {
 
 @media (max-width: 880px) {
 
-    header .logo {
+    .logo {
         font-size: 2rem;
         position: relative;
         left: 100px;
@@ -1069,7 +1086,7 @@ h6 {
     .home .content h3 {
         font-size: 5rem;
         position: relative;
-        left: 100px;
+
     }
 
     html {
@@ -1124,9 +1141,11 @@ h6 {
         right: 0;
     }
 
-
-
+    
 }
+
+
+
 
 @media (max-width:617px) {
     .home-img img {
@@ -1149,17 +1168,69 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+
+    .content h3 {
+        font-size: 4rem;
+
+    }
+
+    .map {
+        display: none;
+    }
+
+    .post-content {
+        padding-left: 0;
+    }
+
+    .content {
+        left: 0;
+
+
+
+    }
+
+    .about .row .map {
+        width: 80%;
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    
+}
+
+@media (max-width: 532px) {
+
+   
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
     html {
-        font-size: 40%;
+        font-size: 45%;
+    }
+
+    .content h3 {
+        font-size: 4rem;
+    }
+
+    .home .content .info {
+        font-size: 2rem;
     }
 
     .heading {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-left: 0;
     }
 
     .heading-2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-left: 0;
     }
 
@@ -1168,11 +1239,11 @@ h6 {
     }
 
     .home .content h3 {
-        font-size: rem;
+        font-size: 3rem;
     }
 
-    .home .content .info {
-        font-size: 2.5rem;
+    .content .info {
+        font-size: 1.5rem;
     }
 
     .about .row-1 .image img {
@@ -1182,18 +1253,41 @@ h6 {
     .about .row-2 .counting {
         padding: 0;
     }
+
 }
 
-@media (max-width: 480px) {
-    html {
-        font-size: 45%;
+
+@media (max-width: 375px) {
+    .home .content {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+
     }
 
     .home .content h3 {
-        font-size: 4rem;
+        font-size: 3rem;
+
+        text-align: center;
+        padding: 0.5rem 0;
     }
 
     .home .content .info {
-        font-size: 2rem;
+        font-size: 1.5rem;
+
+        text-align: center;
+        padding: 0.5rem 0;
     }
+
+    .about .row .map {
+        display: none;
+        width: 100%;
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+   
 }
